@@ -37,10 +37,36 @@ console.log(passMatch,passSerch,passReplace,passTest);
 //User Name=-==========================================
 
 let userName = "abu1554-4";
-let userNamePattan = /^[a-z0-9-_]{6,14}$/
+let userNamePattan = /^[a-z0-9\-_]{6,14}$/
 let userNameMatch = userName.match(userName);
 let userNameSerch = userName.search(userName);
 let userNameReplace = userName.replace(userName, "ahuifp415");
 let userNameTest = userNamePattan.test(userName);
 
 console.log(userNameMatch, userNameReplace, userNameTest,userName);
+
+
+
+// Zip Code=-==========================================
+
+let zipCode = "3500";
+let zipCodePattan = /^\d{4}$/
+let zipCodeMatch = zipCode.match(zipCode);
+let zipCodeSerch = zipCode.search(zipCode);
+let zipCodeReplace = zipCode.replace(zipCode, "3200");
+let zipCodeTest = zipCodePattan.test(zipCode);
+
+console.log(zipCodeMatch, zipCodeReplace, zipCodeTest,zipCode);
+
+
+// HTML Color Code=-==========================================
+
+let colorCode = "#f8f8f8";
+let colorCodePattan = /^#[a-z0-9]{3,6}$/
+let colorCodeMatch = colorCode.match(colorCode);
+let colorCodeSerch = colorCode.search(colorCode);
+let colorCodeReplace = colorCode.replace(colorCode, "#f9f9f9");
+let colorCodeTest = colorCodePattan.test(colorCode);
+
+console.log(colorCodeMatch, colorCodeReplace, colorCodeTest,colorCode);
+
