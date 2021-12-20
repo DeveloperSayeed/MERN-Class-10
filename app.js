@@ -61,7 +61,7 @@ console.log(zipCodeMatch, zipCodeReplace, zipCodeTest,zipCode);
 
 // HTML Color Code=-==========================================
 
-let colorCode = "#f8f8f8";
+let colorCode = "#f8f8f8"; 
 let colorCodePattan = /^#[a-z0-9]{3,6}$/
 let colorCodeMatch = colorCode.match(colorCode);
 let colorCodeSerch = colorCode.search(colorCode);
